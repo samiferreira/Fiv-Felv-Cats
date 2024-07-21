@@ -1,7 +1,6 @@
 import { Router } from "express";
 import { getOng, updateOng } from "../controllers/ong.controller.js";
 
-
 const ongRouter = Router()
 
 ongRouter.get("/ong", (req, res)=>{

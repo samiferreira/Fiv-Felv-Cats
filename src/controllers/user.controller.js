@@ -1,6 +1,5 @@
 import { User } from "../models/User.models.js";
 
-
 let listUser = [
     new User("Sami", 31999998888, "Rua Santa Rita Durão 1143", "sami@gmail.com"),
     new User("Alicia", 31888887777, "123 Fake St", "ana@gmail.com"),
