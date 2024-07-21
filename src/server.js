@@ -6,10 +6,8 @@ import { userRouter } from "./routes/user.route.js";
 const app = express() 
 const port = 4000
 
-// permite nosso js entender json
 app.use(express.json());
 
-// dando acesso as nossas rotas
 app.use(ongRouter)
 app.use(catRouter)
 app.use(userRouter)
