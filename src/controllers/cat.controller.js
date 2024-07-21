@@ -1,7 +1,10 @@
 import { Cat } from "../models/cat.models.js";
 import { findUserId } from "./user.controller.js";
 
-let listCat = [];
+let listCat = [
+  new Cat("Jorge", 1, true, false),
+  new Cat("Zeus", 2, false, false)
+];
 
 export const getCat = () =>{
     return listCat

@@ -1,9 +1,9 @@
 import { v4 as uuidv4  } from "uuid";
 
 export class Cat{
-    constructor(name, age, fiv, felv, userId){
+    constructor(name, age, fiv, felv){
         this.id = uuidv4();
-        this.userId = userId;
+        this.userId = null;
         this.name = name;
         this.age = age;
         this.fiv = fiv;
