@@ -1,19 +1,22 @@
 import { Cat } from "../models/cat.models.js";
 import { findUserId } from "./user.controller.js";
 
-let listCat = [
-  new Cat("Jorge", 1, true, false),
-  new Cat("Zeus", 2, false, false)
-];
+
+let listCat = 
+[
+  new Cat("Jorge", 1, true, false, 'jorge.jpeg'),
+  new Cat("Zeus", 2, true, false, 'zeus.jpg'),
+  new Cat("Peter", 3, true, false,'peter.jpeg'),
+  new Cat("Carlos", 4, true, true, 'carlos.jpeg') ]; 
 
 export const getCat = () =>{
     return listCat
 }
 
-export const createCat = (name, age, fiv, felv) => {
-    const newCat = new Cat(name, age, fiv, felv);
-    listCat.push(newCat);
-    return newCat;
+export const createCat = (name, age, fiv, felv, imageUrl = null) => { 
+  const newCat = new Cat(name, age, fiv, felv, imageUrl);
+  listCat.push(newCat);
+  return newCat;
 }
 
 export const adoptedCat = (catId, userId) => {

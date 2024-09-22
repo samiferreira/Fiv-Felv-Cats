@@ -5,7 +5,7 @@ const userRouter = Router()
 
 userRouter.get("/user", (req, res)=>{
     const user = getUser()
-    res.status(200).json({user})
+    res.status(200).json(user)
     
 })
 
