@@ -9,7 +9,7 @@ export class Cat{
         this.fiv = fiv;
         this.felv = felv;
         this.adopted = false;
-        this.imageUrl = imageUrl ? `http://localhost:4000/imagem/${imageUrl}` : null;
+        this.imageUrl = imageUrl ? `https://fiv-felv-cats.onrender.com/imagem/${imageUrl}` : null;
     
     }
 }
