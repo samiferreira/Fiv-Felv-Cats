@@ -5,8 +5,8 @@ import { findUserId } from "./user.controller.js";
 let listCat = 
 [
   new Cat("Jorge", 1, true, false, 'jorge.jpeg'),
-  new Cat("Zeus", 2, true, false, 'zeus.jpg'),
-  new Cat("Peter", 3, true, false,'peter.jpeg'),
+  new Cat("Zeus", 2, true, true, 'zeus.jpg'),
+  new Cat("Peter", 3, false, true,'peter.jpeg'),
   new Cat("Carlos", 4, true, true, 'carlos.jpeg') ]; 
 
 export const getCat = () =>{
